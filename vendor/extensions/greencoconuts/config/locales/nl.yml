@@ -1,0 +1,32 @@
+nl:
+  refinery:
+    plugins:
+      greencoconuts:
+        title: Greencoconuts
+    greencoconuts:
+      admin:
+        greencoconuts:
+          actions:
+            create_new: Maak een nieuwe Greencoconut
+            reorder: Wijzig de volgorde van de Greencoconuts
+            reorder_done: Klaar met het wijzingen van de volgorde van de Greencoconuts
+          records:
+            title: Greencoconuts
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Greencoconuts. Druk op 'Maak een nieuwe Greencoconut' om de eerste aan te maken.
+          greencoconut:
+            view_live_html: Bekijk deze greencoconut op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze greencoconut
+            delete: Verwijder deze greencoconut voor eeuwig
+      greencoconuts:
+        show:
+          other: Andere Greencoconuts
+  activerecord:
+    attributes:
+      'refinery/greencoconuts/greencoconut':
+        name: Name
+        dimensions: Dimensions
+        manufactured_on: Manufactured On
+        upright: Upright
+        photo: Photo
+        description: Description

@@ -1,0 +1,34 @@
+zh-CN:
+  refinery:
+    plugins:
+      greencoconuts:
+        title: Greencoconuts
+    greencoconuts:
+      admin:
+        greencoconuts:
+          actions:
+            create_new: 建立新的 Greencoconut
+            reorder: 对 Greencoconuts 重新排序
+            reorder_done: 对 Greencoconuts 的重新排序结束
+          records:
+            title: Greencoconuts
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Greencoconuts yet. Click "Add New Greencoconut" to add your first greencoconut.
+            no_items_yet: 目前没有 Greencoconuts . 点击 "Add New Greencoconut" 创建一个greencoconut.
+          greencoconut:
+            view_live_html: 查看 greencoconut 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 greencoconut
+            delete: 永久删除 greencoconut
+      greencoconuts:
+        show:
+          other: 其他 Greencoconuts
+  activerecord:
+    attributes:
+      'refinery/greencoconuts/greencoconut':
+        name: Name
+        dimensions: Dimensions
+        manufactured_on: Manufactured On
+        upright: Upright
+        photo: Photo
+        description: Description

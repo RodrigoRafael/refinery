@@ -1,0 +1,15 @@
+<section id="body_content">
+  <section id="body">
+    <div id="pianos">
+      <% @greencoconuts.each do |greencoconut| %>
+      <div class="piano">
+        <%= image_fu greencoconut.photo, "200x200", class: "image-align-#{cycle("left", "right")}" %>
+        <h2><%= greencoconut.name %></h2>
+        <%=raw greencoconut.description %>
+        <p class="more_info"><%= link_to "More Information", refinery.greencoconuts_greencoconut_path(greencoconut) %></p>
+      </div>
+      <% end %>
+    </div>
+  </section>
+</section>
+

@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Greencoconuts::Admin::GreencoconutsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.greencoconuts_admin_greencoconuts_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_greencoconuts_admin_greencoconut_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Greencoconuts::Admin::GreencoconutsController.sortable? && ::Refinery::Greencoconuts::Greencoconut.any? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Greencoconuts"),
+                 refinery.greencoconuts_admin_greencoconuts_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Greencoconuts"),
+                 refinery.greencoconuts_admin_greencoconuts_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

@@ -1,0 +1,19 @@
+
+
+<section id="body_content">
+  <section id="body">
+    <div id="piano">
+      <%= image_fu @greencoconut.photo, "400x400", class: "image-align-left" %>
+      <h1><%= @greencoconut.name %></h1>
+      <p>
+        <b>Dimensions:</b> <%= @greencoconut.dimensions %>
+      </p>
+      <p>
+        <b>Manufacture Date:</b> <%= @greencoconut.manufactured_on.year %>
+      </p>
+      <%= raw @greencoconut.description %>
+      <p class="back"><%= link_to "Back to Pianos", refinery.greencoconuts_greencoconuts_path %></p>
+    </div>
+  </section>
+</section>
+

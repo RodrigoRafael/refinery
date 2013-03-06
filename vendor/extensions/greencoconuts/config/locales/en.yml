@@ -1,0 +1,32 @@
+en:
+  refinery:
+    plugins:
+      greencoconuts:
+        title: Greencoconuts
+    greencoconuts:
+      admin:
+        greencoconuts:
+          actions:
+            create_new: Add New Greencoconut
+            reorder: Reorder Greencoconuts
+            reorder_done: Done Reordering Greencoconuts
+          records:
+            title: Greencoconuts
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Greencoconuts yet. Click "Add New Greencoconut" to add your first greencoconut.
+          greencoconut:
+            view_live_html: View this greencoconut live <br/><em>(opens in a new window)</em>
+            edit: Edit this greencoconut
+            delete: Remove this greencoconut forever
+      greencoconuts:
+        show:
+          other: Other Greencoconuts
+  activerecord:
+    attributes:
+      'refinery/greencoconuts/greencoconut':
+        name: Name
+        dimensions: Dimensions
+        manufactured_on: Manufactured On
+        upright: Upright
+        photo: Photo
+        description: Description

@@ -1,0 +1,33 @@
+es:
+  refinery:
+    plugins:
+      greencoconuts:
+        title: Greencoconuts
+#        article: masculino/femenino
+    greencoconuts:
+      admin:
+        greencoconuts:
+          actions:
+            create_new: Crear nuevo greencoconut
+            reorder: Reordenar greencoconuts
+            reorder_done: Reordenación de greencoconuts completada
+          records:
+            title: Greencoconuts
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay greencoconuts todavía. Pulsa en "Crear nuevo Greencoconut" para crear tu primer greencoconut.
+          greencoconut:
+            view_live_html: Ver este greencoconut como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este greencoconut
+            delete: Borrar este greencoconut para siempre
+      greencoconuts:
+        show:
+          other: Otros greencoconuts
+  activerecord:
+    attributes:
+      'refinery/greencoconuts/greencoconut':
+        name: Name
+        dimensions: Dimensions
+        manufactured_on: Manufactured On
+        upright: Upright
+        photo: Photo
+        description: Description

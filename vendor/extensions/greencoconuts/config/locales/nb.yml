@@ -1,0 +1,32 @@
+nb:
+  refinery:
+    plugins:
+      greencoconuts:
+        title: Greencoconuts
+    greencoconuts:
+      admin:
+        greencoconuts:
+          actions:
+            create_new: Lag en ny Greencoconut
+            reorder: Endre rekkefølgen på Greencoconuts
+            reorder_done: Ferdig å endre rekkefølgen Greencoconuts
+          records:
+            title: Greencoconuts
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Greencoconuts enda. Klikk på "Lag en ny Greencoconut" for å legge til din første greencoconut.
+          greencoconut:
+            view_live_html: Vis hvordan denne greencoconut ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne greencoconut
+            delete: Fjern denne greencoconut permanent
+      greencoconuts:
+        show:
+          other: Andre Greencoconuts
+  activerecord:
+    attributes:
+      'refinery/greencoconuts/greencoconut':
+        name: Name
+        dimensions: Dimensions
+        manufactured_on: Manufactured On
+        upright: Upright
+        photo: Photo
+        description: Description

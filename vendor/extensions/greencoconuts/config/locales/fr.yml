@@ -1,0 +1,32 @@
+fr:
+  refinery:
+    plugins:
+      greencoconuts:
+        title: Greencoconuts
+    greencoconuts:
+      admin:
+        greencoconuts:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Greencoconut
+            reorder: Réordonner les Greencoconuts
+            reorder_done: Fin de réordonnancement des Greencoconuts
+          records:
+            title: Greencoconuts
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Greencoconut. Cliquer sur "Créer un(e) nouve(au/l/lle) Greencoconut" pour créer votre premi(er/ère) greencoconut.'
+          greencoconut:
+            view_live_html: Voir ce(t/tte) greencoconut <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) greencoconut
+            delete: Supprimer définitivement ce(t/tte) greencoconut
+      greencoconuts:
+        show:
+          other: Autres Greencoconuts
+  activerecord:
+    attributes:
+      'refinery/greencoconuts/greencoconut':
+        name: Name
+        dimensions: Dimensions
+        manufactured_on: Manufactured On
+        upright: Upright
+        photo: Photo
+        description: Description
